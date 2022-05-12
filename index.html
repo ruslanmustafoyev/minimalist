@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,800;1,9..144,600&family=League+Gothic&family=Lexend+Deca:wght@200;500&family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,600;1,700&family=Poppins&family=Public+Sans:wght@100;200&family=Quicksand:wght@300;400&family=Red+Hat+Display:ital@0;1&family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;1,100;1,300;1,400&family=Rubik:ital,wght@0,500;1,400&family=Space+Mono&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Document</title>
+</head>
+
+<body>
+
+    <!-- -------HEADER------- -->
+<header class="header">
+<div class="container header__container">
+ <img src="./img/logo.png" width="60" height="32" alt="" class="header__logo">
+   <div class="header__openMenu"><i class="fa-solid fa-bars"></i></div>
+   <nav class="header__nav header__mainMenu">
+  <ul class="header__list">
+    <li class="header__item"><a href="#" class="header__link">Home</a></li>
+    <li class="header__item"><a href="#" class="header__link">Portfolio</a></li>
+    <li class="header__item"><a href="#" class="header__link">Contact me</a></li>
+  </ul>
+  <div class="header__closeMenu"><i class="fa-solid fa-x"></i></div>
+  </nav>
+</div>
+</header>
+
+<!-- -----MAIN---- -->
+<main class="main">
+<!-- -----PARTS------ -->
+<section class="parts">
+  <div class="container parts__container">
+
+   <div class="parts__item">
+<img src="./img/Manage-img.jpg" width="540" height="500" alt="" class="parts__img">
+<div class="parts__desc">
+<h1 class="parts__title">Manage</h1>
+<p class="parts__text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+<button class="parts__btn">VIEW PROJECT</button>
+<span class="parts__divider"></span>
+</div>
+   </div>
+
+   <div class="parts__item">
+    <img src="./img/Bookmark-img.jpg" width="540" height="500" alt="" class="parts__img">
+    <div class="parts__desc">
+    <h1 class="parts__title">Bookmark</h1>
+    <p class="parts__text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+    <button class="parts__btn">VIEW PROJECT</button>
+    <span class="parts__divider"></span>
+    </div>
+       </div>
+
+
+       <div class="parts__item">
+        <img src="./img/Insure-img.jpg" width="540" height="500" alt="" class="parts__img">
+        <div class="parts__desc">
+        <h1 class="parts__title">Insure</h1>
+        <p class="parts__text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+        <button class="parts__btn">VIEW PROJECT</button>
+        <span class="parts__divider"></span>
+        </div>
+           </div>
+
+
+           <div class="parts__item">
+            <img src="./img/Fylo-img.jpg" width="540" height="500" alt="" class="parts__img">
+            <div class="parts__desc">
+            <h1 class="parts__title">Fylo</h1>
+            <p class="parts__text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+            <button class="parts__btn">VIEW PROJECT</button>
+            <span class="parts__divider"></span>
+            </div>
+               </div>
+
+
+  </div>
+</section>
+
+
+
+</main>
+
+
+
+<script>
+
+
+  const header__openMenu=document.querySelector('.header__openMenu');
+  const header__closeMenu=document.querySelector('.header__closeMenu');
+  const header__mainMenu=document.querySelector('.header__mainMenu');
+
+header__openMenu.addEventListener('click',show);
+header__closeMenu.addEventListener('click',close);
+
+function show(){
+  header__mainMenu.style.display='flex';
+  header__mainMenu.style.top='0';
+}
+function close(){
+  header__mainMenu.style.top='-100%';
+}
+
+
+</script>
+
+
+
+</body>
+</html>
